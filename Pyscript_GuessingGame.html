@@ -28,7 +28,7 @@ label{
 	from pyscript import when
 	@when("click", selector="#submit")
 	def check_guess():
-	user_guess = int(Element("guess".value)
+	user_guess = int(Element("guess").value)
 	result = Element("result")
 	if user_guess == selection:
 	result.write("Congratulations! You guessed correctly.")
